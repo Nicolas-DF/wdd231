@@ -14,9 +14,14 @@
 
     .navigation {
         display: block;
+        border-bottom: 1px solid #eee;
     }
 
     .navigation ul {
         display: flex;
+    }
+
+    .navigation a {
+        border: none;
     }
 }
