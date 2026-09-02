@@ -24,7 +24,7 @@ header span {
     color: #3D405B
 }
 
-/* Hamburguer */
+/**************** HAMBURGER ************/
 .hamburger {
     border: none;
     background: none;
@@ -40,4 +40,15 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+
+
+/**************** NAVIGATION ************/
+.navigation{
+    display: none;
+}
+
+.navigation.show {
+    display: block;
 }
