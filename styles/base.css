@@ -29,7 +29,6 @@ header span {
     border: none;
     background: none;
     font-size: 2rem;
-    color: #3D405B;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -40,4 +39,41 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+
+/******** NAVIGATION *******/
+.navigation{
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color:#fff;
+    background-color: #1c1c1d;
+    border-bottom: 1px solid #000; 
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+.navigation a:hover{
+    background-color: #393939;
+}
+
+
+h1 {
+    margin-left: 10px;
 }
