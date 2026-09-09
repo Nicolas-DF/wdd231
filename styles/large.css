@@ -5,7 +5,7 @@
     }
 
     header {
-        grid-template-columns: 24px auto;
+        grid-template-columns: 24px auto 1fr;
     }
 
     .hamburger {
@@ -23,5 +23,39 @@
 
     .navigation a {
         border: none;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+    .courses-section {
+        grid-column: 1 / -1;
+    }
+
+    .photo img {
+        max-width: 250px;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .course {
+        min-height: 5px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
