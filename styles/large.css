@@ -6,6 +6,7 @@
 
     header {
         grid-template-columns: 24px auto 1fr;
+        align-items: center;
     }
 
     .hamburger {
@@ -15,6 +16,9 @@
     .navigation {
         display: block;
         border-bottom: 1px solid #eee;
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 10px;
     }
 
     .navigation ul {
