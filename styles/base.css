@@ -171,17 +171,21 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 88px;
+    height: 88px;
     border: solid #ccc 1px;
     border-radius: 22px;
 }
 
 .social img {
-    width: 22px;
-    height: 22px;
+    width: 44px;
+    height: 44px;
 }
 
 .social a:hover {
     background-color: #ddd;
+}
+
+p {
+    padding: 0.5rem 0;
 }
