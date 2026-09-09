@@ -84,6 +84,9 @@ function displayCourses(courseList) {
 
     courseContainer.innerHTML = "";
 
+    const totalCredits = document.querySelector("#totalCredits");
+    totalCredits.textContent = calculateCredits(courseList);
+
     courseList.forEach(course => {
         const courseCard = document.createElement("div");
 
@@ -119,3 +122,9 @@ document.querySelector("#wdd").addEventListener("click", () => {
 
 
 displayCourses(courses);
+
+
+/******* Credits *******/
+function calculateCredits(courseList) {
+    return courseList.reduce((total, course) => total + course.credits, 0);
+}
