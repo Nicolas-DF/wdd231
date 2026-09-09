@@ -150,7 +150,9 @@ section img {
     background-color: #ccc;
 }
 
-
+.credits {
+    margin-top: 1rem;
+}
 
 /***************************** FOOTER *************************************/
 footer {
