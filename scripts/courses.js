@@ -89,6 +89,7 @@ function displayCourses(courseList) {
 
     courseList.forEach(course => {
         const courseCard = document.createElement("div");
+        courseCard.classList.add("course");
 
         courseCard.textContent = `${course.subject} ${course.number}`;
 
