@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /***************************** HEADER *************************************/
 header {
     display: grid;
@@ -45,6 +49,7 @@ header span {
 /******** NAVIGATION *******/
 .navigation{
     display: none;
+    grid-column: 1 / -1;
 }
 
 .navigation.show {
@@ -75,14 +80,38 @@ header span {
 
 
 h1 {
-    margin-left: 10px;
+    margin: 0;
 }
 
 
 /***************************** MAIN *************************************/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 h2 {
     background-color: #1d1d1d;
     color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 
