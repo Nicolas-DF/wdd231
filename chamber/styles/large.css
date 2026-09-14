@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    header {
+        padding: 1rem 2rem;
+        flex-wrap: nowrap;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    /*Hide Hamburger button */
+    .hamburger {
+        display: none;
+    }
+
+    /*NAVIGATION */
+    .navigation {
+        display: block;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: 0.75rem 1rem;
+    }
+
+
+    /* MAIN */
+    
+
+
+    /* FOOTER */
+    footer {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contact, .social, .info {
+        flex: 0 1 auto;
+    }
+
+    .contact {
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+
+    .social {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .info {
+        text-align: left;
+        margin-left: auto;
+        font-size: 1.2rem;
+    }
+}
