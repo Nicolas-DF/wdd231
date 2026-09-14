@@ -94,3 +94,43 @@ header > img {
 .navigation .current a {
     text-decoration: underline;
 }
+
+
+/**************** MAIN ***************/
+
+
+/**************** FOOTER ***************/
+footer {
+    background-color: #ddd;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer .name {
+    font-weight: bold;
+}
+
+.contact, .social, .info {
+    flex: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+}
+
+.info {
+    font-size: 0.9rem;
+}
