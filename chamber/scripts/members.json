@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Triplus Technology",
+        "address": "Av. Araraquara, 241 - São Carlos, SP",
+        "phone": "(16) 3371-1177",
+        "website": "",
+        "image": "images/triplus.webp",
+        "membershipLevel": 3,
+        "category": "Technology"
+    },
+
+    {
+        "name": "SUPER EMPRESA",
+        "address": "Rua Padre Teixiera, 1518 - São Carlos, SP",
+        "phone": "(16) 3373-3123",
+        "website": "",
+        "image": "images/super-empresa.webp",
+        "membershipLevel": 2,
+        "category": "Technology"
+    },
+
+    {
+        "name": "Grupo Aureon",
+        "address": "Rua Aquidaban, 778 - São Carlos, SP",
+        "phone": "(16) 99640-8427",
+        "website": "",
+        "image": "images/grupo-aureon.webp",
+        "membershipLevel": 2,
+        "category": "Technology"
+    },
+
+    {
+        "name": "Raccoon Digital Marketing",
+        "address": "Rua Dona Alexandrina, 1366 - São Carlos, SP",
+        "phone": "(16) 99730-5303",
+        "website": "https://raccoon.ag/",
+        "image": "images/raccoon.webp",
+        "membershipLevel": 3,
+        "category": "Marketing"
+    },
+
+    {
+        "name": "Guarani Sistemas",
+        "address": "Passeio dos Flamboyants, 60 - São Carlos, SP",
+        "phone": "(16) 3375-5340",
+        "website": "",
+        "image": "images/guarani-sistemas.webp",
+        "membershipLevel": 2,
+        "category": "Technology"
+    },
+
+    {
+        "name": "NETSOFT",
+        "address": "Av. Miguel Damha, 800, number 59 - São Carlos, SP",
+        "phone": "(16) 99777-8852",
+        "website": "",
+        "image": "images/netsoft.webp",
+        "membershipLevel": 1,
+        "category": "Companies Management"
+    },
+
+    {
+        "name": "Toalhas São Carlos",
+        "address": "Avenida São Carlos, 660 - São Carlos, SP",
+        "phone": "(16) 2106-6200",
+        "website": "https://www.toalhassaocarlos.com.br/",
+        "image": "images/toalhas-sc.webp",
+        "membershipLevel": 1,
+        "category": "Textile Industry"
+    }
+]
