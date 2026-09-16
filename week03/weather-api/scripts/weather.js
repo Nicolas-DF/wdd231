@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 //CREATE REQUIRED VALUES FOR THE URL
-const myKey = '1b8cd4861185b3a20cee66d9b3a7c4ed';
+const myKey = '1f1af9dfc7d0c39f461b21b79cb4156e';
 const lat = 49.75;
 const lon = 6.64;
 
