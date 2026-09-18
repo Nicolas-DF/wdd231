@@ -12,6 +12,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +56,13 @@
 
         <section class="current-events"></section>
 
-        <section class="weather"></section>
+        <section class="weather">
+            <span id="temp"></span>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
 
         <section class="spotlights"></section>
     </main>
