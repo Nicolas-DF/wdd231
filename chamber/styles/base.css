@@ -160,6 +160,32 @@ main {
 }
 
 
+/****** WEATHER AND FORECAST *****/
+.forecast {
+    padding: 1rem;
+}
+
+#forecast-container {
+    display: grid;
+    gap: 1rem;
+}
+
+#forecast-container div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#forecast-container h4 {
+    margin-top: 0;
+}
+
+#forecast-container img {
+    width: 50px;
+}
+
+
 /****** SPOTLIGHTS *******/
 .spotlights {
     display: grid;

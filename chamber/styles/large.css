@@ -39,6 +39,10 @@
 
     /* MAIN */
 
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     .spotlights {
         grid-template-columns: repeat(3, 1fr);
