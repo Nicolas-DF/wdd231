@@ -20,9 +20,12 @@ function displayMembers(member) {
     const card = document.createElement('article');
 
     card.innerHTML = `
+        <img src="${member.image}" alt="${member.name} logo">
         <h3>${member.name}</h3>
-        <p>${member.address}</p>
         <p>${member.phone}</p>
+        <p>${member.address}</p>
+        <p>${member.website}</p>
+        <p>${member.membershipLevel}</p>
     `;
 
     spotlights.appendChild(card);
