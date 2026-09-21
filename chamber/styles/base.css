@@ -109,6 +109,27 @@ main {
     display: block;
 }
 
+/****** CTA ****/
+.cta {
+    padding: 1rem;
+    text-align: center;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+}
+
+.cta a:hover {
+    background-color: #555;
+    transition: 0.3s;
+}
+
 /****** SPOTLIGHTS *******/
 .spotlights {
     display: grid;
