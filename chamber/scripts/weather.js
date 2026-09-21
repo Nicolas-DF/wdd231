@@ -63,10 +63,17 @@ async function getForecast() {
                     return item.dt_txt.startsWith(`${day} 12:00:00`);
                 });
 
+                //Formatting date string
+                const date = new Date(`${day}T12:00:00`);
+                const formattedDate = date.toLocaleDateString('en-US', {
+                    month: '2-digit',
+                    day: '2-digit'
+                });
+
                 //Creating Forecast Cards
                 const card = document.createElement('div');
                 card.innerHTML = `
-                <h4>${day}</h4>
+                <h4>${formattedDate}</h4>
                 <p>${forecast.main.temp}&deg;C</p>
                 <img src="https://openweathermap.org/img/w/${forecast.weather[0].icon}.png" alt="${forecast.weather[0].description}">
                 <p>${forecast.weather[0].description}</p>
