@@ -11,6 +11,7 @@ async function getMembers() {
     const selectedMembers = qualifiedMembers.slice(0, 3);
 
     console.log(selectedMembers);
+    selectedMembers.forEach(displayMembers);
 }
 
 getMembers();
