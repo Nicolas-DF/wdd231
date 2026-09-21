@@ -130,6 +130,36 @@ main {
     transition: 0.3s;
 }
 
+/***** CURRENT EVENTS ****/
+.current-events {
+    padding: 1rem;
+}
+
+.current-events article {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.current-events img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.current-events h3 {
+    margin-top: 0;
+}
+
+.current-events p {
+    margin: 0.5rem 0;
+}
+
+
 /****** SPOTLIGHTS *******/
 .spotlights {
     display: grid;
