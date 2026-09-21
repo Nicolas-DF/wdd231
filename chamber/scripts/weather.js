@@ -1,7 +1,8 @@
 
-const currentTemp = document.querySelector('#temp');
+const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const forecast = document.querySelector('#forecast-container');
 
 //CREATE REQUIRED VALUES FOR THE URL
 const myKey = '1f1af9dfc7d0c39f461b21b79cb4156e';
@@ -10,6 +11,7 @@ const lon = -47.89173007812205;
 
 // API URL
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${myKey}`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${myKey}`;
 
 
 // ASYNC FUNCTION
