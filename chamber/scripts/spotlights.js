@@ -31,9 +31,9 @@ function displayMembers(member) {
         <h3>${member.name}</h3>
         <p>${member.phone}</p>
         <p>${member.address}</p>
-        <a href"${member.website}" target="_blank">Visit Website</a>
+        <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
         <p>${membership}</p>
     `;
 
     spotlights.appendChild(card);
-}
+};
