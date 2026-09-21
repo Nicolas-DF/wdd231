@@ -14,3 +14,15 @@ async function getMembers() {
 }
 
 getMembers();
+
+function displayMembers(member) {
+    const card = document.createElement('article');
+
+    card.innerHTML = `
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+    `;
+
+    spotlights.appendChild(card);
+}
