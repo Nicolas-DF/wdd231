@@ -1,4 +1,5 @@
 const membersURL = "data/members.json";
+const spotlights = document.querySelector('.spotlights');
 
 async function getMembers() {
     const response = await fetch(membersURL);
