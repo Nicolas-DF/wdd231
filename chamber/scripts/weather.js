@@ -46,7 +46,19 @@ async function getForecast() {
 
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            const days = [];
+
+            data.list.forEach(item => {
+                const date = item.dt_txt.split(' ')[0];
+
+                if (!days.includes(date)) {
+                    days.push(date);
+                }
+            });
+            
+            const forecastDays = days.slice(1, 4);
+            console.log(forecastDays);
+            
         } else {
             throw Error(await response.text());
         }
