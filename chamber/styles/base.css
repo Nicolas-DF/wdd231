@@ -120,6 +120,7 @@ main {
 
 .spotlights img {
     max-width: 150px;
+    min-width: 60px;
     height: auto;
     border-radius: 7px;
 }
