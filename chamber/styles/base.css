@@ -102,6 +102,10 @@ main {
 
     }
 
+h2 {
+    margin: 3rem 0 0.5rem;
+}
+
 /***** HERO IMAGE ****/
 .hero img {
     width: 100%;
