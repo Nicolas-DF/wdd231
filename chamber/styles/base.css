@@ -98,8 +98,31 @@ header > img {
 
 /**************** MAIN ***************/
 main {
-        margin-bottom: 1rem;
+        margin: 1rem;
+
     }
+
+
+
+/****** SPOTLIGHTS *******/
+.spotlights {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spotlights article {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.spotlights img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 7px;
+}
 
 
 /**************** FOOTER ***************/
