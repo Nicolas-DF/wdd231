@@ -14,7 +14,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${myKey}`;
 
 
-// ASYNC FUNCTION
+// ASYNC FUNCTION 
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -39,4 +39,22 @@ function displayResults(data) {
     captionDesc.textContent = `${desc}`;
 };
 
+// GETTING FORECAST
+async function getForecast() {
+    try {
+        const response = await fetch(forecastURL);
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// CALLING FUNCTIONS
 apiFetch();
+getForecast();
