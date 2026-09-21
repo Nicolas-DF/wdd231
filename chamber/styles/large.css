@@ -38,7 +38,33 @@
 
 
     /* MAIN */
+    .hero {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cta a {
+        padding: 1.2rem 3rem;
+        font-size: 1.5rem;
+    }
+
+
+    .current-events {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .current-events img {
+        width: 200px;
+        height: 200px;
+    }
 
     #forecast-container {
         grid-template-columns: repeat(3, 1fr);
