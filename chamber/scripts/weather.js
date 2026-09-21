@@ -2,7 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const forecast = document.querySelector('#forecast-container');
+const forecastContainer = document.querySelector('#forecast-container');
 
 //CREATE REQUIRED VALUES FOR THE URL
 const myKey = '1f1af9dfc7d0c39f461b21b79cb4156e';
@@ -55,8 +55,26 @@ async function getForecast() {
                     days.push(date);
                 }
             });
-            
+
             const forecastDays = days.slice(1, 4);
+            
+            forecastDays.forEach(day => {
+                const forecast = data.list.find(item => {
+                    return item.dt_txt.startsWith(`${day} 12:00:00`);
+                });
+
+                //Creating Forecast Cards
+                const card = document.createElement('div');
+                card.innerHTML = `
+                <h4>${day}</h4>
+                <p>${forecast.main.temp}&deg;C</p>
+                <img src="https://openweathermap.org/img/w/${forecast.weather[0].icon}.png" alt="${forecast.weather[0].description}">
+                <p>${forecast.weather[0].description}</p>
+                `;
+
+                forecastContainer.appendChild(card);
+            });
+
             console.log(forecastDays);
             
         } else {
