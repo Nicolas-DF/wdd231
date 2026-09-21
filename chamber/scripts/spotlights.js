@@ -1,4 +1,4 @@
-const membersURL = "../data/members.json";
+const membersURL = "data/members.json";
 
 async function getMembers() {
     const response = await fetch(membersURL);
