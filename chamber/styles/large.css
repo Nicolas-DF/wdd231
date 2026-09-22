@@ -66,6 +66,23 @@
         height: 200px;
     }
 
+
+    .weather {
+        max-width: 1500px;
+        margin: 2rem auto;
+    }
+
+    .weather h2 {
+        text-align: center;
+        margin: auto;
+        padding: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    .weather h2, .weather h3 {
+        color: #156ea2;
+    }
+
     #forecast-container {
         grid-template-columns: repeat(3, 1fr);
     }
