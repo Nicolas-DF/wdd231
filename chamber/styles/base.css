@@ -64,7 +64,8 @@ header > img {
 /******* NAVIGATION ******/
 .navigation {
     display: none;
-    width: 100%;
+    width: 35%;
+    margin-left: auto;
 }
 
 .navigation.open {
@@ -85,6 +86,7 @@ header > img {
     display: block;
     padding: 0.75rem;
     text-decoration: none;
+    text-align: right;
 }
 
 .navigation a:hover{
