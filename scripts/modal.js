@@ -14,16 +14,23 @@ function displayCourseDetails(course) {
         `;
     courseDetails.showModal();
 
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });
-
     //Closing modal
-    courseDetails.addEventListener("click", () => {
+    document.querySelector('#closeModal').addEventListener('click', () => {
         courseDetails.close();
     });
 }
 
-courseDiv.addEventListener("click", () => {
-    displayCourseDetails(course);
-})
+document.addEventListener('DOMContentLoaded', () => {
+    const courseContainer = document.querySelector('.courses');
+
+    courseContainer.addEventListener('click', () => {
+        const card = event.target.closest('.course');
+        if (!card) return;
+
+        const course = courses.find(c => `${c.subject} ${c.number}` === card.textContent);
+
+        if (course) {
+            displayCourseDetails(course);
+        }
+    });
+});
