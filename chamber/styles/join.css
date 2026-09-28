@@ -1,0 +1,60 @@
+/* Mobile */
+
+main {
+    display: block;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+
+/* Desktop */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+}
+
+/* Thankyou.html */
+.application-info {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.application-info h2 {
+    margin-top: 0;
+}
+
+.application-info p {
+    margin: 0.8rem 0;
+}
+
+main {
+    display: block;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main > p {
+    text-align: center;
+}
