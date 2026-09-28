@@ -46,9 +46,71 @@
     </header>
 
     <main>
+
         <form action="thankyou.html" method="get">
-            
+            <label for="fname">First Name: </label>
+            <input name="fname" id="fname" type="text" autocomplete="given-name" required title="Enter your first name">
+
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" autocomplete="family-name" title="Enter your last name" required>
+
+            <label for="company-name">Organizational Title: </label>
+            <input type="text" name="company-name" id="company-name" autocomplete="organization-title" title="Enter your organizational title" pattern="^[A-Za-z\s-]{7,}$">
+
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email" autocomplete="email" title="Enter your email address" placeholder="info@contact.com" required>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+
+            <label for="business-name">Business Name: </label>
+            <input type="text" name="business-name" id="business-name" title="Enter your business/organization's name" autocomplete="organization" required>
+
+            <label for="membership">Membership Level</label>
+            <select name="membership" id="membership" required>
+                <option value="" selected disabled>-- Select a membership level --</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business/Organization Description</label>
+            <textarea name="description" id="description" title="Enter a description of your business/organization"></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" name="submit" id="submit" value="Apply for Membership">
         </form>
+
+        <section class="membership-cards">
+
+            <div class="membership-card">
+                <h2>NP Membership</h2>
+                <p>For non-profit organizations.</p>
+                <a href="#np-modal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Bronze Membership</h2>
+                <p>Basic benefits for your organization/business.</p>
+                <a href="#bronze-modal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Silver Membership</h2>
+                <p>Additional benefits and opportunities.</p>
+                <a href="#silver-modal">Learn More</a>
+            </div>
+
+            <div class="membership-card">
+                <h2>Gold Membership</h2>
+                <p>Premium benefits for your organization/business.</p>
+                <a href="#gold-modal">Learn More</a>
+            </div>
+            
+        </section>
+        
     </main>
 
     <footer>
