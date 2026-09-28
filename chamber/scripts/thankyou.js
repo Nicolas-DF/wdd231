@@ -16,7 +16,7 @@ document.querySelector("#business-name").textContent = businessName;
 const timestamp = params.get("timestamp");
 const date = new Date(timestamp);
 
-const formattedDate = date.toLocaleDateString("en-US", {
+const formattedDate = date.toLocaleString("en-US", {
     dateStyle: "long",
     timeStyle: "short"
 });
