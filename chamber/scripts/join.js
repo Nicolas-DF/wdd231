@@ -2,9 +2,9 @@
 
 
 // MEMBERSHIP CARDS SECTION
-const modalLinks = document.querySelector(".membership-card a");
-const modals = document.querySelector("dialog");
-const closeButtons = document.querySelector(".close-modal");
+const modalLinks = document.querySelectorAll(".membership-card a");
+const modals = document.querySelectorAll("dialog");
+const closeButtons = document.querySelectorAll(".close-modal");
 
 //Show modals
 modalLinks.forEach(link => {
