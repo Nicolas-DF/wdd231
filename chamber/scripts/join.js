@@ -1,10 +1,6 @@
-// FORM ACTIONS
-
-   //Timestamp
+// FORM ACTION
    const timestamp = document.querySelector("#timestamp");
    timestamp.value = new Date().toISOString();
-
-    //thankyou.html display
 
 // MEMBERSHIP CARDS SECTION
 const modalLinks = document.querySelectorAll(".membership-card a");
