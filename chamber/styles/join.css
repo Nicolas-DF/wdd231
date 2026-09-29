@@ -1,4 +1,4 @@
-/* Mobile */
+/********* MOBILE **********/
 
 .join-main {
     display: block;
@@ -11,6 +11,7 @@
     display: block;
 }
 
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -41,11 +42,15 @@ form textarea {
 }
 
 form input[type="submit"] {
+    width: 100%;
     padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
 }
 
+/* Cards */
 .membership-cards {
     display: flex;
     flex-direction: column;
@@ -58,11 +63,22 @@ form input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card h2 {
+    margin-top: 0;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 
 
 
-/* Desktop */
+/********* DESKTOP **********/
 @media (min-width: 768px) {
     .join-main {
         display: grid;
@@ -77,7 +93,7 @@ form input[type="submit"] {
 }
 }
 
-/* Thankyou.html */
+/********* THANKYOU.HTML **********/
 .application-info {
     max-width: 700px;
     margin: 2rem auto;
