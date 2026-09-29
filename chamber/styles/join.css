@@ -18,6 +18,17 @@ form {
     gap: 1rem;
 }
 
+.required-note {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.required-note span {
+    color: red;
+    font-weight: bold;
+}
+
 form label {
     display: flex;
     flex-direction: column;
