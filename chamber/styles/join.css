@@ -65,17 +65,17 @@ form textarea {
     margin: 0.8rem 0;
 }
 
-/* main {
+.thankyou-main {
     display: block;
     padding: 2rem 1rem;
     max-width: 900px;
     margin: 0 auto;
 } */
 
-main h1 {
+.thankyou-main h1 {
     text-align: center;
 }
 
-main > p {
+.thankyou-main > p {
     text-align: center;
 }
