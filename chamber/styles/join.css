@@ -29,11 +29,19 @@ form select,
 form textarea {
     width: 100%;
     box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: 5px;
+    border-left: 5px solid #777;
+    min-height: 37px;
 }
 
-form input:required {
-    border-left: #ff0000 4px solid;
+.join-main form input:required:valid,
+.join-main form select:required:valid {
+    border-left: 7px solid green;
+}
+
+.join-main form input:required:invalid,
+.join-main form select:required:invalid {
+    border-left: 7px solid red;
 }
 
 form textarea {
