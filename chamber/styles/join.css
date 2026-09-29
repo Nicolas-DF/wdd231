@@ -1,6 +1,6 @@
 /* Mobile */
 
-main {
+.join-main {
     display: block;
 }
 
@@ -34,7 +34,7 @@ form textarea {
 
 /* Desktop */
 @media (min-width: 768px) {
-    main {
+    .join-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
