@@ -2,6 +2,13 @@
 
 .join-main {
     display: block;
+    padding: 1.5rem 1rem;
+}
+
+.join-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: block;
 }
 
 form {
@@ -24,11 +31,34 @@ form textarea {
     border-radius: 2px;
 }
 
-.membership-cards {
-    display: grid;
-    gap: 1rem;
+form input:required {
+    border-left: #ff0000 4px solid;
 }
 
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.membership-card {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
 
 
 
