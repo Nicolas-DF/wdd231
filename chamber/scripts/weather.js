@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('figcaption');
 const forecastContainer = document.querySelector('#forecast-container');
 
 //CREATE REQUIRED VALUES FOR THE URL
-const myKey = '1f1af9dfc7d0c39f461b21b79cb4156e';
+const myKey = '7a5aaae56c96772c3b1f3cc7aa8b77f2';
 const lat = -22.00916431403047;
 const lon = -47.89173007812205;
 
