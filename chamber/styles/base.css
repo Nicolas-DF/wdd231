@@ -150,12 +150,13 @@ h2 {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    background-color: #333;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .cta a:hover {
-    background-color: #555;
+    background-color: var(--secondary-color);
+    color: white;
     transition: 0.3s;
 }
 
@@ -169,8 +170,16 @@ h2 {
     gap: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.current-events article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
 }
 
 .current-events img {
@@ -178,14 +187,21 @@ h2 {
     height: 130px;
     object-fit: cover;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .current-events h3 {
     margin-top: 0;
+    color: var(--primary-color);
 }
 
 .current-events p {
     margin: 0.5rem 0;
+}
+
+.current-events p:first-of-type {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 
