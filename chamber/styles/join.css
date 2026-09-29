@@ -123,6 +123,53 @@ form input[type="submit"] {
     animation-delay: 0.3s;
 }
 
+/* Modals */
+dialog {
+    width: 80%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-modal {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+dialog h2 {
+    margin: 0 0 0.75rem;
+}
+
+dialog h3 {
+    margin-bottom: 0.5rem;
+}
+
+dialog li {
+    margin-bottom: 0.25rem;
+}
+
+dialog p {
+    margin-top: 1rem;
+}
 
 /********* DESKTOP **********/
 @media (min-width: 768px) {
