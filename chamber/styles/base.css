@@ -102,12 +102,13 @@ header > img {
     text-align: right;
 }
 
-.navigation a:hover{
-    background-color: #bbb;
+.navigation a:hover {
+    background-color: var(--secondary-color);
 }
 
 .navigation .current a {
-    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 
@@ -264,7 +265,8 @@ h2 {
 
 /**************** FOOTER ***************/
 footer {
-    background-color: #ddd;
+    background-color: var(--primary-color);
+    color: white;
     padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -277,6 +279,7 @@ footer p {
 
 footer .name {
     font-weight: bold;
+    color: var(--accent-color);
 }
 
 .contact, .social, .info {
