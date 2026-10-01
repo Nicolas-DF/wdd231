@@ -12,21 +12,21 @@
     },
 
     {
-        "name": "",
-        "address": "",
-        "description": ""
+        "name": "São Carlos Ecological Park",
+        "address": "Municipal Road Guilherme Scatena, Km 2, s/n - São Carlos, SP",
+        "description": "An area dedicated to wildlife conservation and environmental education, offering visitors contact with nature and various animal species. The site operates as a zoo, managed by UFSCar (Federal University of São Carlos) and its students."
     },
 
     {
-        "name": "",
-        "address": "",
-        "description": ""
+        "name": "Center for Scientific and Cultural Dissemination (CDCC)",
+        "address": "Street Nove de Julho, 1227 - São Carlos, SP",
+        "description": "A USP (University of São Paulo) center dedicated to scientific and cultural outreach, featuring exhibitions and activities related to fields such as physics, chemistry, biology, mathematics, and astronomy."
     },
 
     {
-        "name": "",
-        "address": "",
-        "description": ""
+        "name": "Dietrich Schiel Astronomical Observatory",
+        "address": "Avenue Dr. Carlos Botelho, 1465 - São Carlos, SP",
+        "description": "As part of the CDCC's Astronomy division, the observatory promotes the dissemination of astronomy through sky observations, guided tours, lectures, and courses."
     },
 
     {
