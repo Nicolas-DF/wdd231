@@ -12,7 +12,7 @@ places.forEach(place => {
         </figure>
         <address>${place.address}</address>
         <p>${place.description}</p>
-        <button>Learn More</button>
+        <a href="${place.url}" target="_blank" rel="noopener noreferrer">Learn More</a>
         `;
 
     discoverGrid.appendChild(card);
