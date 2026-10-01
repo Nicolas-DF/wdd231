@@ -1,6 +1,6 @@
 import places from "../data/places.mjs";
 
-const discoverGrid = document.getElementById("discover-grid");
+const discoverGrid = document.querySelector("#discover-grid");
 
 places.forEach(place => {
     const card = document.createElement("article");
