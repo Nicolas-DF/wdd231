@@ -1,4 +1,4 @@
-[
+const places = [
     {
         "name": "São Carlos Railway Station",
         "address": "Praça Antônio Prado, s/n - São Carlos, SP",
@@ -14,7 +14,7 @@
     {
         "name": "São Carlos Ecological Park",
         "address": "Estrada Municipal Guilherme Scatena, Km 2, s/n - São Carlos, SP",
-        "description": "An area dedicated to wildlife conservation and environmental education, offering visitors contact with nature and various animal species. The site operates as a zoo, managed by UFSCar (Federal University of São Carlos) and its students."
+        "description": "An area dedicated to wildlife conservation and environmental education, offering visitors contact with nature and various animal species. The site operates as a zoo and is managed by UFSCar (Federal University of São Carlos) and its students."
     },
 
     {
@@ -46,4 +46,6 @@
         "address": "Av. Comendador Alfredo Maffei, 700 - São Carlos, SP",
         "description": "A cultural and leisure space offering activities related to sports, culture, education, health, and community interaction."
     }
-]
+];
+
+export default places;
