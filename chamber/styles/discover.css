@@ -1,8 +1,4 @@
 /******** MOBILE ********/
-main {
-    padding: 1rem;
-}
-
 #discover-grid {
     display: grid;
     grid-template-columns: 1fr;
