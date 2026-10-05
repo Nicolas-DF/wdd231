@@ -2,8 +2,10 @@ import places from "../data/places.mjs";
 
 const discoverGrid = document.querySelector("#discover-grid");
 
-places.forEach(place => {
+places.forEach((place, index) => {
     const card = document.createElement("article");
+
+    card.classList.add(`card-${index + 1}`);
 
     card.innerHTML = `
         <h2>${place.name}</h2>
