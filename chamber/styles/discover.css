@@ -46,3 +46,89 @@ main {
     border-radius: 4px;
     color: #fff;
 }
+
+/******** MEDIUM SCREENS ********/
+@media (min-width: 641px) {
+    #discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    #discover-grid .card-1 {
+        grid-area: card1;
+    }
+
+    #discover-grid .card-2 {
+        grid-area: card2;
+    }
+
+    #discover-grid .card-3 {
+        grid-area: card3;
+    }
+
+    #discover-grid .card-4 {
+        grid-area: card4;
+    }
+
+    #discover-grid .card-5 {
+        grid-area: card5;
+    }
+
+    #discover-grid .card-6 {
+        grid-area: card6;
+    }
+
+    #discover-grid .card-7 {
+        grid-area: card7;
+    }
+
+    #discover-grid .card-8 {
+        grid-area: card8;
+    }
+}
+
+@media (min-width: 1025px) {
+    #discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
+    }
+
+    #discover-grid .card-1 {
+        grid-area: card1;
+    }
+
+    #discover-grid .card-2 {
+        grid-area: card2;
+    }
+
+    #discover-grid .card-3 {
+        grid-area: card3;
+    }
+
+    #discover-grid .card-4 {
+        grid-area: card4;
+    }
+
+    #discover-grid .card-5 {
+        grid-area: card5;
+    }
+
+    #discover-grid .card-6 {
+        grid-area: card6;
+    }
+
+    #discover-grid .card-7 {
+        grid-area: card7;
+    }
+
+    #discover-grid .card-8 {
+        grid-area: card8;
+    }
+}
