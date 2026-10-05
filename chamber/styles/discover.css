@@ -25,9 +25,10 @@ main {
 }
 
 #discover-grid img {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
+    border-radius: 4px;
 }
 
 #discover-grid address {
@@ -131,5 +132,13 @@ main {
 
     #discover-grid .card-8 {
         grid-area: card8;
+    }
+
+    #discover-grid img {
+        transition: transform 0.3s ease;
+    }
+
+    #discover-grid img:hover {
+        transform: scale(1.05);
     }
 }
