@@ -45,6 +45,7 @@ main {
     background-color: #2E7D5B;
     border-radius: 4px;
     color: #fff;
+    cursor: pointer;
 }
 
 /******** MEDIUM SCREENS ********/
