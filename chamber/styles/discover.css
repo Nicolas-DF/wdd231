@@ -51,6 +51,13 @@ main {
 
 /******** MEDIUM SCREENS ********/
 @media (min-width: 641px) {
+
+    #discover-grid img {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
     #discover-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
