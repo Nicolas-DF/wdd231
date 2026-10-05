@@ -1,0 +1,48 @@
+/******** MOBILE ********/
+main {
+    padding: 1rem;
+}
+
+#discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#discover-grid article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#discover-grid h2 {
+    margin-top: 0;
+}
+
+#discover-grid figure {
+    margin: 0 0 1rem;
+}
+
+#discover-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#discover-grid address {
+    margin-bottom: 1rem;
+}
+
+#discover-grid p {
+    line-height: 1.5;
+}
+
+#discover-grid a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    background-color: #2E7D5B;
+    border-radius: 4px;
+    color: #fff;
+}
