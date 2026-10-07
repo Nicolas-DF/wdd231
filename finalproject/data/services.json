@@ -1,0 +1,98 @@
+[
+    {
+        "id": "business-cards",
+        "name": "Business Cards",
+        "category": "Printing",
+        "description": "Professional business cards designed to make a strong first impression and showcase your brand.",
+        "image": "images/business-cards.webp",
+        "alt": "Stack of printed business cards"
+    },
+    {
+        "id": "flyers",
+        "name": "Flyers",
+        "category": "Printing",
+        "description": "Eye-catching flyers for promotions, events, announcements, and marketing campaigns.",
+        "image": "images/flyers.webp",
+        "alt": "Colorful printed promotional flyers"
+    },
+    {
+        "id": "posters",
+        "name": "Posters",
+        "category": "Printing",
+        "description": "High-quality posters created to capture attention and promote events, products, services, and special offers.",
+        "image": "images/posters.webp",
+        "alt": "Large printed promotional poster"
+    },
+    {
+        "id": "brochures",
+        "name": "Brochures",
+        "category": "Printing",
+        "description": "Professionally printed brochures that present your products, services, or organization clearly and effectively.",
+        "image": "images/brochures.webp",
+        "alt": "Open printed brochure displaying business information"
+    },
+    {
+        "id": "banners",
+        "name": "Banners",
+        "category": "Visual Communication",
+        "description": "Large-format banners for businesses, events, promotions, and other occasions that need to stand out.",
+        "image": "images/banners.webp",
+        "alt": "Large printed promotional banner"
+    },
+    {
+        "id": "stickers",
+        "name": "Stickers",
+        "category": "Visual Communication",
+        "description": "Custom stickers in a variety of shapes and sizes to promote your brand, products, or creative ideas.",
+        "image": "images/stickers.webp",
+        "alt": "Collection of custom printed stickers"
+    },
+    {
+        "id": "labels",
+        "name": "Labels",
+        "category": "Packaging",
+        "description": "Custom printed labels that help products look professional while providing important information to customers.",
+        "image": "images/labels.webp",
+        "alt": "Custom printed product labels"
+    },
+    {
+        "id": "invitations",
+        "name": "Invitations",
+        "category": "Events",
+        "description": "Personalized invitations for weddings, birthdays, celebrations, and other special events.",
+        "image": "images/invitations.webp",
+        "alt": "Elegant printed event invitations"
+    },
+     {
+        "id": "calendars",
+        "name": "Calendars",
+        "category": "Printing",
+        "description": "Custom calendars combining practical organization with your personal or business branding and/or interests.",
+        "image": "images/calendars.webp",
+        "alt": "Printed custom calendar"
+    },
+    {
+        "id": "packaging",
+        "name": "Packaging",
+        "category": "Packaging",
+        "description": "Custom printed packaging designed to protect your products and create a memorable brand experience.",
+        "image": "images/packaging.webp",
+        "alt": "Custom printed product packaging"
+    },
+    {
+        "id": "custom-graphic-design",
+        "name": "Custom Graphic Design",
+        "category": "Design",
+        "description": "Creative graphic design services tailored to your project, from promotional materials to custom print designs.",
+        "image": "images/custom-graphic-design.webp",
+        "alt": "Designer creating a custom graphic design"
+    },
+    {
+        "id": "logo-design",
+        "name": "Logo Design",
+        "category": "Design",
+        "description": "Unique and professional logos created to give your business a memorable and consistent visual identity.",
+        "image": "images/logo-design.webp",
+        "alt": "Custom business logo design displayed on a screen"
+    }
+]
