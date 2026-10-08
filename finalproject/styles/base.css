@@ -73,6 +73,13 @@ header {
     line-height: 1;
 }
 
+.hamburger::before {
+    content: "\2630";
+}
+.hamburger.open::before {
+    content: "\2715";
+}
+
 .navigation {
     display: none;
 }
