@@ -25,3 +25,29 @@ h2,
 h3 {
     font-family: "Poppins", sans-serif;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/****** HEADER ******/
+header {
+    background-color: var(--bg-color--);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-grey--);
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
