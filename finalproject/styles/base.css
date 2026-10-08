@@ -103,3 +103,22 @@ header {
     color: var(--main-blue--);
     font-weight: 600;
 }
+
+/***** HERO SECTION ******/
+.hero {
+    background-color: var(--light-blue--);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.hero h2 {
+    color: var(--dark-blue--);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
