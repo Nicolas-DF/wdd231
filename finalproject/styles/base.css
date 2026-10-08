@@ -1,0 +1,14 @@
+:root {
+    --main-blue--: #2563EB;
+    --dark-blue--: #1E3A8A;
+    --light-blue--: #DBEAFE;
+    --text-color--: #1F2937;
+    --light-grey--: #F3F4F6;
+    --bg-color--: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
