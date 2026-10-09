@@ -29,7 +29,7 @@
 
     /************ MAIN ************/
 
-    /***** HERO SECTION ******/
+    /***** HERO SECTION *****/
     .hero {
         padding: 5rem 3rem;
     }
@@ -44,4 +44,15 @@
         margin: 0 auto 1.5rem;
     }
 
+    /***** SERVICES SECTION *****/
+    .services {
+        padding: 4rem 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
