@@ -26,4 +26,22 @@
     .navigation a:hover {
         color: var(--main-blue--);
     }
+
+    /************ MAIN ************/
+
+    /***** HERO SECTION ******/
+    .hero {
+        padding: 5rem 3rem;
+    }
+
+    .hero img {
+        max-width: 600px;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        max-width: 800px;
+        margin: 0 auto 1.5rem;
+    }
+
 }
