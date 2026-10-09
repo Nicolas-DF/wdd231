@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    /************ HEADER ************/
+    header {
+        padding: 1rem 3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        width: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        padding: 0.5rem 0;
+    }
+
+    .navigation a:hover {
+        color: var(--main-blue--);
+    }
+}
