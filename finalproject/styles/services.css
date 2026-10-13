@@ -123,3 +123,34 @@
     background-color: var(--dark-blue--);
     color: var(--bg-color--);
 }
+
+
+/***MEDIUM SCREENS ***/
+@media (min-width: 768px) {
+    .services-intro {
+        padding: 5rem 3rem;
+    }
+
+    .services-intro h1 {
+        font-size: 3rem;
+    }
+
+    .services-catalog {
+        padding: 4rem 3rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .service-category h3 {
+        font-size: 1.6rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .services-cta {
+        padding: 4rem 2rem;
+    }
+}
