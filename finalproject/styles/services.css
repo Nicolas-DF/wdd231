@@ -93,3 +93,33 @@
     color: var(--dark-blue--);
     text-decoration: underline;
 }
+
+/* FINAL CALL TO ACTION */
+.services-cta {
+    background-color: var(--light-blue--);
+    color: var(--dark-blue--);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.services-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.services-cta p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.services-cta .cta {
+    background-color: var(--bg-color--);
+    color: var(--dark-blue--);
+    border: 2px solid var(--main-blue--);
+    transition: 0.3s ease;
+}
+
+.services-cta .cta:hover {
+    background-color: var(--dark-blue--);
+    color: var(--bg-color--);
+}
