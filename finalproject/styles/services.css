@@ -1,0 +1,19 @@
+/* SERVICES INTRO */
+
+.services-intro {
+    background-color: var(--light-blue--);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.services-intro h1 {
+    color: var(--dark-blue--);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-intro p {
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    color: var(--text-color--);
+}
