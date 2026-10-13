@@ -44,7 +44,93 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section class="request-intro">
+            <h1>Request a Quote</h1>
+            <p>Tell us a little about your project, and our team will help you find the right printing solution.</p>
+        </section>
+
+        <section class="request-form-section">
+            <div class="form-heading">
+                <h2>Let's Talk About Your Project</h2>
+                <p>
+                    Fill out the form below with your project details.
+                    Fields marked with an asterisk (*) are required.
+                </p>
+            </div>
+
+            <form id="quote-form" action="#" method="get">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label>Full Name *<input type="text" id="fullname" name="fullname" autocomplete="name" required></label>
+                    <label>Email *<input type="email" id="email" name="email" autocomplete="email" required></label>
+                    <label>Phone Number<input type="tel" id="phone" name="phone" autocomplete="tel"></label>
+                    <label>Company Name <input type="text" id="company" name="company" autocomplete="organization"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Details</legend>
+                    
+                    <fieldset>
+                        <legend>Services Needed *</legend>
+                        <p>Select all services that apply to your project.</p>
+
+                        <label><input type="checkbox" name="services" value="business-cards">Business Cards</label>
+                        <label for="quantity-business-cards">Quantity</label>
+                        <input type="number" id="quantity-business-cards" name="quantity-business-cards" min="1" placeholder="e.g. 500" disabled>
+
+                        <label><input type="checkbox" name="services" value="flyers">Flyers</label>
+                        <label for="quantity-flyers">Quantity</label>
+                        <input type="number" id="quantity-flyers" name="quantity-flyers" min="1" placeholder="e.g. 500" disabled>
+
+                        <label><input type="checkbox" name="services" value="brochures">Brochures</label>
+                        <label for="quantity-brochures">Quantity</label>
+                        <input type="number" id="quantity-brochures" name="quantity-brochures" min="1" placeholder="e.g. 500" disabled>
+
+                        <label><input type="checkbox" name="services" value="posters">Posters</label>
+                        <label for="quantity-posters">Quantity</label>
+                        <input type="number" id="quantity-posters" name="quantity-posters" min="1" placeholder="e.g. 200" disabled>
+
+                        <label><input type="checkbox" name="services" value="banners">Banners</label>
+                        <label for="quantity-banners">Quantity</label>
+                        <input type="number" id="quantity-banners" name="quantity-banners" min="1" placeholder="e.g. 200" disabled>
+
+                        <label><input type="checkbox" name="services" value="stickers">Stickers</label>
+                        <label for="quantity-stickers">Quantity</label>
+                        <input type="number" id="quantity-stickers" name="quantity-stickers" min="1" placeholder="e.g. 200" disabled>
+
+                        <label><input type="checkbox" name="services" value="labels">Labels</label>
+                        <label for="quantity-labels">Quantity</label>
+                        <input type="number" id="quantity-labels" name="quantity-labels" min="1" placeholder="e.g. 200" disabled>
+
+                        <label><input type="checkbox" name="services" value="invitations">Invitations</label>
+                        <label for="quantity-invitations">Quantity</label>
+                        <input type="number" id="quantity-invitations" name="quantity-invitations" min="1" placeholder="e.g. 200" disabled>
+
+                        <label><input type="checkbox" name="services" value="calendars">Calendars</label>
+                        <label for="quantity-calendars">Quantity</label>
+                        <input type="number" id="quantity-calendars" name="quantity-calendars" min="1" placeholder="e.g. 300" disabled>
+
+                        <label><input type="checkbox" name="services" value="packaging">Packaging</label>
+                        <label for="quantity-packaging">Quantity</label>
+                        <input type="number" id="quantity-packaging" name="quantity-packaging" min="1" placeholder="e.g. 300" disabled>
+
+                        <label><input type="checkbox" name="services" value="custom-graphic-design">Custom Graphic Design</label>
+                        <label for="quantity-custom-graphic-design">Quantity</label>
+                        <input type="number" id="quantity-custom-graphic-design" name="quantity-custom-graphic-design" min="1" placeholder="e.g. 300" disabled>
+
+                        <label><input type="checkbox" name="services" value="logo-design">Logo Design</label>
+                        <label for="quantity-logo-design">Quantity</label>
+                        <input type="number" id="quantity-logo-design" name="quantity-logo-design" min="1" placeholder="e.g. 300" disabled>
+
+                        <label><input type="checkbox" name="services" value="other">Other</label>
+                    </fieldset>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
 
     <footer>
         <div class="contact">
