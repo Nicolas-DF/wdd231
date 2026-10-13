@@ -1,4 +1,4 @@
-
+/*********** CHECKBOXES ***********/
 const serviceCheckboxes = document.querySelectorAll(
     '.service-option input[type="checkbox"]'
 );
@@ -6,15 +6,36 @@ const serviceCheckboxes = document.querySelectorAll(
 serviceCheckboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
         const serviceOption = checkbox.closest('.service-option');
+
         const quantityInput = serviceOption.querySelector(
             'input[type="number"]'
         );
 
-        quantityInput.disabled = !checkbox.checked;
-        quantityInput.required = checkbox.checked;
+        const descriptionInput = serviceOption.querySelector(
+            'textarea'
+        );
 
-        if (!checkbox.checked) {
-            quantityInput.value = '';
+        // Enable or disable the quantity field
+        if (quantityInput) {
+            quantityInput.disabled = !checkbox.checked;
+
+            // Quantity is required for regular services, but optional for "Other".
+            quantityInput.required =
+                checkbox.checked && checkbox.value !== 'other';
+
+            if (!checkbox.checked) {
+                quantityInput.value = '';
+            }
+        }
+
+        // Handle the description field for "Other"
+        if (descriptionInput) {
+            descriptionInput.disabled = !checkbox.checked;
+            descriptionInput.required = checkbox.checked;
+
+            if (!checkbox.checked) {
+                descriptionInput.value = '';
+            }
         }
     });
 });
