@@ -1,7 +1,5 @@
 /*********** CHECKBOXES ***********/
-const serviceCheckboxes = document.querySelectorAll(
-    '.service-option input[type="checkbox"]'
-);
+const serviceCheckboxes = document.querySelectorAll('.service-option input[type="checkbox"]');
 
 serviceCheckboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
