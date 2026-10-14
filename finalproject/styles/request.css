@@ -1,0 +1,39 @@
+/* Intro section */
+.request-intro {
+    background-color: var(--light-blue--);
+    color: var(--dark-blue--);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.request-intro h1 {
+    margin-bottom: 1rem;
+}
+
+.request-intro p {
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Form section */
+.request-form-section {
+    width: min(100% - 2rem, 800px);
+    margin: 3rem auto;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-heading h2 {
+    color: var(--dark-blue--);
+    margin-bottom: 0.75rem;
+}
+
+.form-heading p {
+    color: var(--text-color--);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
