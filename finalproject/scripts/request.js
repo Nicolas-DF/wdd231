@@ -179,4 +179,6 @@ quoteForm.addEventListener("submit", event => {
         quoteForm.reportValidity();
         return;
     }
+
+    displayConfirmation();
 });
