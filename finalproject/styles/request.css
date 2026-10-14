@@ -37,3 +37,82 @@
     max-width: 600px;
     margin: 0 auto;
 }
+
+
+/* Form structure */
+#quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#quote-form fieldset {
+    border: 1px solid #D1D5DB;
+    border-radius: 12px;
+    padding: 1.5rem;
+    min-width: 0;
+}
+
+#quote-form legend {
+    color: var(--dark-blue--);
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+/* Form labels and fields */
+#quote-form > fieldset > label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+}
+
+#quote-form input[type="text"],
+#quote-form input[type="email"],
+#quote-form input[type="tel"],
+#quote-form input[type="date"],
+#quote-form input[type="number"],
+#quote-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #9CA3AF;
+    border-radius: 6px;
+    font: inherit;
+    color: var(--text-color--);
+    background-color: var(--bg-color--);
+}
+
+#quote-form textarea {
+    resize: vertical;
+}
+
+#quote-form input:focus,
+#quote-form textarea:focus {
+    outline: 2px solid var(--main-blue--);
+    outline-offset: 2px;
+    border-color: var(--main-blue--);
+}
+
+#quote-form input:disabled,
+#quote-form textarea:disabled {
+    background-color: var(--light-grey--);
+    cursor: not-allowed;
+}
+
+#quote-form input[type="checkbox"] {
+    accent-color: var(--main-blue--);
+}
+
+
+/* Service options */
+.service-option {
+    margin-bottom: 1.5rem;
+}
+
+.service-option > label:first-child {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
