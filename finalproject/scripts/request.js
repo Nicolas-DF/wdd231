@@ -66,6 +66,109 @@ serviceCheckboxes.forEach(checkbox => {
 // Initialize the service validation
 updateServiceValidation();
 
+/*** Form Confirmation Info ***/
+function addSummaryItem(container, label, value) {
+    if (!value) {
+        return;
+    }
+
+    const item = document.createElement("p");
+    const strong = document.createElement("strong");
+
+    strong.textContent = `${label}: `;
+    item.append(strong, document.createTextNode(value));
+
+    container.appendChild(item);
+}
+
+function displayConfirmation() {
+    const confirmation = document.querySelector("#confirmation");
+    const customerSummary = document.querySelector("#customer-summary");
+    const servicesSummary = document.querySelector("#services-summary");
+    const projectSummary = document.querySelector("#project-summary");
+
+    // Clear previous summaries
+    customerSummary.replaceChildren();
+    servicesSummary.replaceChildren();
+    projectSummary.replaceChildren();
+
+    // Customer information
+    addSummaryItem(
+        customerSummary,
+        "Full Name",
+        quoteForm.elements.fullname.value.trim()
+    );
+
+    addSummaryItem(
+        customerSummary,
+        "Email",
+        quoteForm.elements.email.value.trim()
+    );
+
+    addSummaryItem(
+        customerSummary,
+        "Phone Number",
+        quoteForm.elements.phone.value.trim()
+    );
+
+    addSummaryItem(
+        customerSummary,
+        "Company Name",
+        quoteForm.elements.company.value.trim()
+    );
+
+    // Selected services and quantities
+    const selectedServices = quoteForm.querySelectorAll(
+        '.service-option input[type="checkbox"]:checked'
+    );
+
+    selectedServices.forEach(checkbox => {
+        const serviceOption = checkbox.closest(".service-option");
+        const quantityInput = serviceOption.querySelector('input[type="number"]');
+        const descriptionInput = serviceOption.querySelector("textarea");
+
+        const serviceName = checkbox.value === "other"
+            ? descriptionInput.value.trim()
+            : checkbox.parentElement.textContent.trim();
+
+        const quantity = quantityInput?.value;
+
+        const item = document.createElement("p");
+        const strong = document.createElement("strong");
+
+        strong.textContent = serviceName;
+        item.appendChild(strong);
+
+        if (quantity) {
+            item.appendChild(
+                document.createTextNode(` — Quantity: ${quantity}`)
+            );
+        }
+
+        servicesSummary.appendChild(item);
+    });
+
+    // Project details
+    addSummaryItem(
+        projectSummary,
+        "Preferred Completion Date",
+        quoteForm.elements.deadline.value
+    );
+
+    addSummaryItem(
+        projectSummary,
+        "Project Description",
+        quoteForm.elements.description.value.trim()
+    );
+
+    // Show confirmation and hide form
+    quoteForm.hidden = true;
+    confirmation.hidden = false;
+
+    confirmation.scrollIntoView({ behavior: "smooth" });
+}
+
+
 // Handle form submission
 quoteForm.addEventListener("submit", event => {
     event.preventDefault();
