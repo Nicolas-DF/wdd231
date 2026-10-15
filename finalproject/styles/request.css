@@ -103,6 +103,11 @@
 /* Service options */
 .service-option {
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .service-option > label:first-child {
@@ -110,6 +115,21 @@
     align-items: center;
     gap: 0.5rem;
     margin-top: 0.75rem;
+    font-weight: bold;
+}
+
+/* Quantity fields */
+.service-option input[type="number"] {
+    max-width: 300px;
+}
+
+.service-option textarea {
+    max-width: 100%;
+}
+
+/* Other service quantity label */
+.service-option > label:not(:first-child) {
+    margin-top: 0.25rem;
 }
 
 /* Checkboxes */
