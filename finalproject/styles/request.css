@@ -166,3 +166,18 @@
     outline: 2px solid var(--main-blue--);
     outline-offset: 3px;
 }
+
+
+/* Services Needed fieldset */
+#quote-form fieldset fieldset {
+    padding-bottom: 0.5rem;
+}
+
+#quote-form fieldset fieldset .service-option:last-child {
+    margin-bottom: 0;
+}
+
+/* Spacing after Services Needed */
+#quote-form > fieldset > label {
+    margin-top: 1rem;
+}
