@@ -170,6 +170,19 @@ header {
     object-fit: cover;
 }
 
+.service-card a {
+    font-weight: bold;
+    font-style: italic;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--main-blue--);
+    transition: 0.3s ease;
+}
+
+.service-card a:hover {
+    color: var(--dark-blue--);
+}
+
 /******* ABOUT SECTION ******/
 .about {
     background-color: var(--light-grey--);
