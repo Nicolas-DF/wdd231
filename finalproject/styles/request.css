@@ -228,3 +228,27 @@
     outline: 3px solid var(--main-blue--);
     outline-offset: 3px;
 }
+
+/***** MEDIUM SCREENS DISPLAY *****/
+@media screen and (min-width: 768px) {
+    #quote-form fieldset fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+/***** LARGE SCREENS DISPLAY *****/
+@media screen and (min-width: 1024px) {
+
+    .request-form-section {
+        width: min(100% - 2rem, 1100px);
+        margin: 3rem auto;
+    }
+
+    #quote-form fieldset fieldset {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
