@@ -181,3 +181,20 @@
 #quote-form > fieldset > label {
     margin-top: 1rem;
 }
+
+/* Services layout - mobile first */
+#quote-form fieldset fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#quote-form fieldset fieldset > legend,
+#quote-form fieldset fieldset > p {
+    grid-column: 1 / -1;
+}
+
+#quote-form .service-option {
+    min-width: 0;
+    margin-bottom: 0;
+}
